@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Pais {
-	private String pais;
+	private String nombre;
 	private int cantidadAutos = 0;
 	private static ArrayList<Pais> paises = new ArrayList<Pais>();
 	
 	public Pais(String pais) {
-		this.pais = pais;
+		this.nombre = pais;
 		paises.add(this);
 	}
 	public void addAutos() {
@@ -29,12 +29,12 @@ public class Pais {
 		return paises.get(posicion);
 	}
 	
-	public String getPais() {
-		return pais;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setPais(String pais) {
-		this.pais = pais;
+	public void setNombre(String pais) {
+		this.nombre = pais;
 	}
 	
 }
